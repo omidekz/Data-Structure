@@ -46,3 +46,7 @@ class Array:
             mess = 'Bad assignment'
         if mess:
             raise Exception(mess)
+
+    def __str__(self):
+        return '[{}]'.format(', '.join([i.__str__() for i in self.array]))
+
