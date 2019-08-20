@@ -4,16 +4,17 @@ from ds import Base
 class Stack(Base):
     def __init__(self):
         super().__init__()
+        self.__name = 'Stack'
 
     def push(self, obj):
-        self.__list.append(obj)
-        self.__len += 1
+        self._list.append(obj)
+        self._len += 1
 
     def pop(self):
-        if self.length == 0:
-            raise Exception("Stack is Empty")
-        self.__len -= 1
-        return self.__list.pop()
+        if self.isempty():
+            raise Exception("{} is Empty".format(self.__name))
+        self._len -= 1
+        return self._list.pop()
 
     def peek(self):
         obj = self.pop()

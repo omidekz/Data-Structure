@@ -1,7 +1,8 @@
 class Base:
     def __init__(self):
-        self.__list = list()
-        self.__len = 0
+        self._list = list()
+        self._len = 0
+        self._name = 'Base'
 
     def push(self, obj):
         pass
@@ -14,4 +15,7 @@ class Base:
 
     @property
     def length(self):
-        return self.__len
+        return self._len
+
+    def isempty(self):
+        return self._len == 0
