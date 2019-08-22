@@ -14,7 +14,7 @@ class BST:
 
     def add(self, obj):
         """
-        This method add the obj depend on __gt__ method
+        This method add obj to bst
         :param obj:
         :return:
         """
