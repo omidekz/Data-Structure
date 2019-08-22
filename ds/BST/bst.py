@@ -43,6 +43,11 @@ class BST:
                 node.left = Node(obj)
 
     def search(self, key):
+        """
+        This method return the data of node depend of key, use of __eq__ method
+        :param key:
+        :return:
+        """
         return self.__search(self.root, key).data
 
     @staticmethod
