@@ -1,4 +1,5 @@
-from ds import SQBase
+from ds import GBase
+
 
 class Node:
     def __init__(self, data):
@@ -10,8 +11,9 @@ class Node:
         return '{}'.format(self.data.__str__())
 
 
-class BST:
+class BST(GBase):
     def __init__(self):
+        super().__init__()
         self.root = None
 
     def add(self, obj):

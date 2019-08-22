@@ -6,5 +6,7 @@ from .stackenqueue.queue import Queue
 
 from .linkedlist.linkedlist import LinkedList
 
-from ds.Graph.BST.bst import BST
-from ds.Graph.gbase import GBase
+from .Graph.gbase import GBase
+from .Graph.BST.bst import BST
+from .Graph.heaps.maxheap import MaxHeap
+from .Graph.heaps.minheap import MinHeap
