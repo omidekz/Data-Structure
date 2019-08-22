@@ -25,6 +25,12 @@ class BST:
 
     @staticmethod
     def __add(node: Node, obj):
+        """
+        This method add the obj depend on __gt__ method
+        :param node:
+        :param obj:
+        :return:
+        """
         if node.data < obj:
             if node.right:
                 BST.__add(node.right, obj)
