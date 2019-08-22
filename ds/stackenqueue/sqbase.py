@@ -1,4 +1,4 @@
-class Base:
+class SQBase:
     def __init__(self):
         self._list = list()
         self._len = 0

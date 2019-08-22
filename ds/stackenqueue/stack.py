@@ -1,7 +1,7 @@
-from ds import Base
+from ds import SQBase
 
 
-class Stack(Base):
+class Stack(SQBase):
     def __init__(self):
         super().__init__()
         self.__name = 'Stack'
