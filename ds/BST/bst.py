@@ -13,6 +13,11 @@ class BST:
         self.root = None
 
     def add(self, obj):
+        """
+        This method add the obj depend on __gt__ method
+        :param obj:
+        :return:
+        """
         if not self.root:
             self.root = Node(obj)
         else:
