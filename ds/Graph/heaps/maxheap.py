@@ -58,3 +58,7 @@ class MaxHeap(GBase):
     def __iter__(self):
         for i in range(self.__len):
             yield self.__list[i]
+
+    @property
+    def length(self):
+        return self.__len
