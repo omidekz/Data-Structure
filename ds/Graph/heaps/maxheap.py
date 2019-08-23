@@ -54,3 +54,7 @@ class MaxHeap(GBase):
 
     def __str__(self):
         return '[{}]'.format(', '.join([str(i) for i in self.__list]))
+
+    def __iter__(self):
+        for i in range(self.__len):
+            yield self.__list[i]
