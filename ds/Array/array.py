@@ -1,6 +1,5 @@
 class Array:
     def __init__(self, instance=None, length: int = -1):
-        super().__init__()
         self.instance = instance
         self.len_ = length
         self.array = list()
@@ -50,3 +49,6 @@ class Array:
     def __str__(self):
         return '[{}]'.format(', '.join([i.__str__() for i in self.array]))
 
+    @property
+    def length(self):
+        return self.count if self.len_ == -1 else self.len_
