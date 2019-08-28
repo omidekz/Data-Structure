@@ -27,7 +27,7 @@ class Array:
         return down_lim <= index < up_lim
 
     def __getitem__(self, item: int):
-        if self.__check(item):
+        if self.__check(item, affect_len=False):
             return self.array[item]
         raise Exception("bad index passed")
 
@@ -47,7 +47,7 @@ class Array:
             raise Exception(mess)
 
     def __str__(self):
-        return '[{}]'.format(', '.join([i.__str__() for i in self.array]))
+        return '[{}]'.format(', '.join([str(i) for i in self.array]))
 
     @property
     def length(self):
