@@ -10,3 +10,4 @@ from .Graph.gbase import GBase
 from .Graph.BST.bst import BST
 from .Graph.heaps.maxheap import MaxHeap
 from .Graph.heaps.minheap import MinHeap
+from .Matrix import Matrix
