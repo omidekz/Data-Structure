@@ -3,7 +3,7 @@ from typing import List
 
 class Matrix:
     def __init__(self, *args: int):
-        self.vol = args
+        self.vol = tuple(args)
         self.matrix = []
 
         def make(matrix: list, index: int = 0):
@@ -23,6 +23,10 @@ class Matrix:
 
     def __setitem__(self, key, value):
         self.matrix.__setitem__(key, value)
+
+    @property
+    def shape(self):
+        return self.vol
 
     def __str__(self):
         return str(self.matrix)
