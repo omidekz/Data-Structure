@@ -1,6 +1,3 @@
-from typing import List
-
-
 class Matrix:
     def __init__(self, *args: int):
         self.vol = tuple(args)
